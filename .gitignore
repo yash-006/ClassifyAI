@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+
+# Checkpoints
+checkpoints/
+*.pth
+
+# Temporary Images
+temp_image.jpg
+
+# Streamlit Cache
+.streamlit/
