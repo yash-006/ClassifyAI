@@ -261,25 +261,25 @@ The application will automatically open in your browser.
 
 ## Home Page
 
-> image-1.png
+![Home Page](images/image-1.png)
 
 ---
 
 ## Upload Image
 
-> image-2.png
+![Upload Image](images/image-2.png)
 
 ---
 
 ## Prediction Result
 
-> image-3.png
+![Prediction Result](images/image-3.png)
 
 ---
 
 ## Top-5 Predictions
 
-> image-4.png
+![Top-5 Predictions](images/image-4.png)
 
 ---
 
