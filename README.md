@@ -185,7 +185,7 @@ The web application allows users to:
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/yash-006/ClassifyAI-Demo.git
+git clone https://github.com/yash-006/ClassifyAI.git
 
 cd ClassifyAI-Demo
 ```
