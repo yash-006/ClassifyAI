@@ -1,71 +1,69 @@
 # 🧠 ClassifyAI
 
-> AI-Powered Image Classification using Transfer Learning and PyTorch
+<p align="center">
 
-ClassifyAI is a deep learning-based image classification system developed as part of the **GUVI HCL AI/ML Capstone Project**. The project compares multiple state-of-the-art CNN architectures on different datasets and provides an interactive Streamlit application for real-time image classification.
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?style=for-the-badge&logo=pytorch)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge&logo=streamlit)
+![License](https://img.shields.io/badge/License-Educational-green?style=for-the-badge)
+
+</p>
+
+<p align="center">
+
+## AI-Powered Image Classification using Transfer Learning
+
+A Deep Learning based Image Classification System developed as part of the **GUVI HCL AI/ML Capstone Project**.
+
+</p>
 
 ---
 
-## 🚀 Features
+# 📖 Overview
 
-- Image classification using Transfer Learning
-- Interactive Streamlit web application
-- Support for multiple image datasets
-- Automatic selection of the best-performing model
-- Real-time prediction
-- Top-5 prediction probabilities
-- Confidence score
-- Inference time measurement
-- Comprehensive model evaluation
+ClassifyAI is an end-to-end Deep Learning application that classifies images using state-of-the-art Convolutional Neural Networks (CNNs).
+
+The project performs a comprehensive comparison of seven pretrained deep learning architectures across three different image classification datasets. Based on the experimental evaluation, the best-performing model is automatically selected for deployment through an interactive Streamlit web application.
+
+The project demonstrates the complete Machine Learning workflow:
+
+- Dataset Preparation
+- Transfer Learning
+- Model Training
+- Model Evaluation
+- Model Comparison
+- Best Model Selection
+- Streamlit Deployment
 
 ---
 
-## 📂 Supported Datasets
+# ✨ Features
+
+- ✅ Image Classification using Transfer Learning
+- ✅ Interactive Streamlit Web Application
+- ✅ Automatic Best Model Selection
+- ✅ Top-5 Predictions
+- ✅ Confidence Score
+- ✅ Inference Time
+- ✅ Multi-Dataset Support
+- ✅ Comparative Model Evaluation
+- ✅ Professional User Interface
+
+---
+
+# 📂 Supported Datasets
 
 | Dataset | Classes |
-|----------|---------|
+|----------|---------:|
 | Animals | 90 |
 | Butterflies | 75 |
 | ImageNet10 | 10 |
 
 ---
 
-## 🏆 Best Performing Model
+# 🧠 Deep Learning Models Evaluated
 
-Based on the experimental comparison, **ConvNeXt Tiny** achieved the best overall performance across the evaluated datasets.
-
-| Dataset | Selected Model |
-|----------|----------------|
-| Animals | ConvNeXt Tiny |
-| Butterflies | ConvNeXt Tiny |
-| ImageNet10 | ConvNeXt Tiny |
-
----
-
-## 🏗️ Project Structure
-
-```text
-ClassifyAI/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── src/
-│   ├── inference.py
-│   └── model_factory.py
-│
-├── configs/
-├── models/
-├── checkpoints/
-├── reports/
-├── Notebook1.ipynb
-├── Notebook2.ipynb
-└── Notebook3.ipynb
-```
-
----
-
-## 🧠 Deep Learning Models Evaluated
+The following pretrained CNN architectures were evaluated:
 
 - AlexNet
 - VGG16
@@ -77,7 +75,23 @@ ClassifyAI/
 
 ---
 
-## 📊 Evaluation Metrics
+# 🏆 Best Performing Model
+
+After evaluating all models across all datasets, **ConvNeXt Tiny** achieved the best overall performance.
+
+| Dataset | Deployment Model |
+|----------|-----------------|
+| Animals | ConvNeXt Tiny |
+| Butterflies | ConvNeXt Tiny |
+| ImageNet10 | ConvNeXt Tiny |
+
+The deployed Streamlit application automatically loads the best-performing model for the selected dataset.
+
+---
+
+# 📊 Evaluation Metrics
+
+The trained models were evaluated using:
 
 - Accuracy
 - Precision
@@ -90,10 +104,13 @@ ClassifyAI/
 
 ---
 
-## 🔄 Project Workflow
+# 🔄 Project Workflow
 
 ```text
 Dataset Preparation
+        │
+        ▼
+Data Preprocessing
         │
         ▼
 Transfer Learning
@@ -102,7 +119,13 @@ Transfer Learning
 Model Training
         │
         ▼
-Model Evaluation
+Validation
+        │
+        ▼
+Testing
+        │
+        ▼
+Performance Evaluation
         │
         ▼
 Model Comparison
@@ -116,101 +139,231 @@ Streamlit Deployment
 
 ---
 
-## 🖥️ Streamlit Application
+# 🏗️ Project Structure
 
-The Streamlit application provides:
+```text
+ClassifyAI/
 
-- Dataset selection
-- Image upload
-- Automatic best-model selection
-- Prediction result
-- Confidence score
-- Top-5 predictions
-- Inference time
+│── app.py
+│── README.md
+│── requirements.txt
+│── .gitignore
 
----
-
-## 🛠️ Technologies Used
-
-- Python
-- PyTorch
-- Torchvision
-- TIMM
-- Streamlit
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
-- Google Colab
-- VS Code
-
----
-
-## ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/ClassifyAI.git
-cd ClassifyAI
+├── checkpoints/
+│
+├── models/
+│
+├── src/
+│   ├── inference.py
+│   └── model_factory.py
+│
+├── reports/
+│
+├── Notebook1.ipynb
+├── Notebook2.ipynb
+└── Notebook3.ipynb
 ```
 
-Install dependencies:
+---
+
+# 🖥️ Streamlit Application
+
+The web application allows users to:
+
+- Select a Dataset
+- Upload an Image
+- Automatically load the best-performing model
+- Predict the image class
+- View Confidence Score
+- View Inference Time
+- View Top-5 Predictions
+
+---
+
+# 📥 Installation
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/yash-006/ClassifyAI-Demo.git
+
+cd ClassifyAI-Demo
+```
+
+---
+
+## 2️⃣ Create Virtual Environment
+
+### Windows
+
+```bash
+python -m venv venv
+
+venv\Scripts\activate
+```
+
+### Linux / Mac
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+---
+
+## 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application:
+---
+
+## 4️⃣ Download Model Checkpoints
+
+The trained model checkpoints are **not included** in this repository because GitHub restricts large files.
+
+Download the checkpoints from Google Drive:
+
+## 📥 Download Checkpoints
+
+**https://drive.google.com/drive/folders/1h-H1jM_UYUBnzrz1kqjpD6HbF3ZXBVZK?usp=sharing**
+
+After downloading, place them inside:
+
+```text
+checkpoints/
+
+├── animals/
+│   └── convnext_best.pth
+
+├── butterflies/
+│   └── convnext_best.pth
+
+└── imagenet10/
+    └── convnext_best.pth
+```
+
+---
+
+## 5️⃣ Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
----
-
-## 📸 Screenshots
-
-Add screenshots of:
-
-- Home Page
-- Image Upload
-- Prediction Results
-- Top-5 Predictions
+The application will automatically open in your browser.
 
 ---
 
-## 📈 Results
+# 📸 Screenshots
 
-ConvNeXt Tiny achieved the best balance of:
+## Home Page
+
+> ![alt text](image-2.png)
+
+---
+
+## Upload Image
+
+> ![alt text](image-1.png)
+
+---
+
+## Prediction Result
+
+> ![alt text](image-3.png)
+
+---
+
+## Top-5 Predictions
+
+> ![alt text](image-4.png)
+
+---
+
+# 📈 Results
+
+ConvNeXt Tiny achieved the best overall balance between:
 
 - High Accuracy
 - High Macro F1 Score
-- Low Calibration Error
+- Low Expected Calibration Error
 - Fast Inference
+- Computational Efficiency
 
-making it the recommended model for deployment.
-
----
-
-## 🔮 Future Improvements
-
-- Cloud deployment
-- Batch image prediction
-- Mobile-friendly interface
-- Explainable AI (Grad-CAM)
-- Model quantization for faster inference
+Therefore, ConvNeXt Tiny was selected as the deployment model for the final application.
 
 ---
 
-## 👨‍💻 Author
+# 🛠️ Technologies Used
 
-**Yash**
+### Programming
+
+- Python
+
+### Deep Learning
+
+- PyTorch
+- Torchvision
+- TIMM
+
+### Data Science
+
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+
+### Deployment
+
+- Streamlit
+
+### Development Environment
+
+- Google Colab
+- VS Code
+
+---
+
+# 🚀 Future Improvements
+
+- Deploy on Cloud
+- Batch Image Prediction
+- Grad-CAM Visualization
+- Mobile Responsive Interface
+- ONNX Export
+- Model Quantization
+- Docker Deployment
+
+---
+
+# 👨‍💻 Author
+
+## Yash
 
 B.Tech Computer Science Engineering
 
+AI/ML Enthusiast
+
 ---
 
-## 📜 License
+# 🙏 Acknowledgements
 
-This project is developed for educational and learning purposes as part of the GUVI HCL AI/ML Capstone Project.
+This project was developed as part of the **GUVI HCL AI/ML Capstone Project**.
+
+Special thanks to:
+
+- GUVI
+- HCL
+- PyTorch Community
+- Streamlit Team
+
+---
+
+# 📜 License
+
+This project is intended for **educational and learning purposes**.
+
+© 2026 Yash. All Rights Reserved.
