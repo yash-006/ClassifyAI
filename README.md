@@ -151,7 +151,7 @@ The Streamlit application provides:
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ClassifyAI.git
+git clone https://github.com/yash-006/ClassifyAI.git
 cd ClassifyAI
 ```
 
