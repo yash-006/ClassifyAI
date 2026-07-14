@@ -149,6 +149,7 @@ ClassifyAI/
 │── requirements.txt
 │── .gitignore
 
+<<<<<<< HEAD
 ├── checkpoints/
 │
 ├── models/
@@ -162,6 +163,33 @@ ClassifyAI/
 ├── Notebook1.ipynb
 ├── Notebook2.ipynb
 └── Notebook3.ipynb
+=======
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- PyTorch
+- Torchvision
+- TIMM
+- Streamlit
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Google Colab
+- VS Code
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yash-006/ClassifyAI.git
+cd ClassifyAI
+>>>>>>> e3f4b3f3325eccae58620657da826228a712dd25
 ```
 
 ---
@@ -351,6 +379,7 @@ AI/ML Enthusiast
 
 # 🙏 Acknowledgements
 
+<<<<<<< HEAD
 This project was developed as part of the **GUVI HCL AI/ML Capstone Project**.
 
 Special thanks to:
@@ -367,3 +396,6 @@ Special thanks to:
 This project is intended for **educational and learning purposes**.
 
 © 2026 Yash. All Rights Reserved.
+=======
+This project is developed for educational and learning purposes as part of the GUVI HCL AI/ML Capstone Project.
+>>>>>>> e3f4b3f3325eccae58620657da826228a712dd25
